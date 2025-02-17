@@ -1,0 +1,22 @@
+hazme un codigo en python que valide una cadena como numero entero positivo o negativo con estas reglas, la variable no se ingresa por consola si no que se declara al principio del codigo como una variable 
+
+ejemplo de validos: 1, 2, +3, -3, 4.5, 4.5e1, +4.5E-2, 2e2, 2E2
+ejemplo de invalidos: -, =1, =, +, 2., .2, +.2, -.2, -1., +1., +2e, -2E, -2e#, +2Ew
+ 
+1.- el numero puede empezar con un + o un digito, quiere decir que es positivo 
+pero si empieza con un signo - , no es positivo
+en caso de que empieze por algo que no sea un signo ni con un digito entonces se invalida 
+2- la parte entera consiste en uno o mas digitos, si la cadena solo empieza por un signo, entonces se invalida
+3- el numero puede contener un punto indicando una parte decimal, si la cadena empieza por un punto se invalida, si despues de un signo hay un punto entonces no hay parte entera, entonces se invalida
+ si la cadena termina en un punto entonces se invalida 
+4- el numero puede contener una parte exponencial indicado por una e o E despues de la parte entera, la parte exponencial se compone de e o E mas un signo sea + o - pero puede no contener un signo 
+ si la cadena termina con una e o E entonces se invalida
+si despues de la e o E hay algo que no sea un digito ni un signo se invalida
+si despues del signo hay algo que no sea un digito se invalida
+
+# TODO: ESO FUE EL PRIMER REGEX
+
+# TODO: EL SEGUNDO FUE USANDO
+https://regex-generator.olafneumann.org/?sampleText=-.1&flags=W&selection=1%7CDecimal%20number,0%7CCharacter
+
+https://regex101.com/
