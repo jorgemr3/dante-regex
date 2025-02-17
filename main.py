@@ -55,13 +55,14 @@ import re
 
 #region regex
 regex = r'^[+-]?(?=\d+\.?\d*$|\.?\d+)(\d+(?:\.\d+)?|\.\d+)(?:[eE][+-]?\d+)?$'
+# regex_4 = r'^([+-]?(?=\.\d|\d)(?:\d+)?(?:\.?\d*))(?:[Ee]([+-]?\d+))?$'
 regex_2 = r'^-[0-9]*\.[0-9]+$'
 regex_3 = r'^\+[0-9]*\.[0-9]+$'
 #endregion
 
 # TODO: SI SIRVE
 
-cadena = "+.e-2"
+cadena = ""
 
 # Verificar si la cadena coincide con el primer regex y NO con el segundo, el segundo es para rebotar errores como: -.e-2, -.e, -., -2.e-2
 if re.fullmatch(regex, cadena) and not re.fullmatch(regex_2, cadena) and not re.fullmatch(regex_3, cadena):

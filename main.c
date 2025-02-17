@@ -1,6 +1,6 @@
 #include <regex.h>
 
-// TODO : NO EJECUTAR
+// TODO : NO SE PUEDE EJECUTAR
 
 int useRegex(char* textToCheck) {
     regex_t compiledRegex;
