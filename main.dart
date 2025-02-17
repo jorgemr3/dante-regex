@@ -14,6 +14,7 @@ final String cadena = '1';
 //negativos que empiezan con un punto en su parte entera
 // pero no tienen nada antes de el punto
 
+// TODO : SI SIRVE
 
 if(regex.hasMatch(cadena) && !regex_2.hasMatch(cadena) && !regex_3.hasMatch(cadena)){
   print('La cadena es un número valido ');

@@ -1,5 +1,7 @@
 #include <regex.h>
 
+// TODO : NO EJECUTAR
+
 int useRegex(char* textToCheck) {
     regex_t compiledRegex;
     int reti;

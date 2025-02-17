@@ -59,6 +59,8 @@ regex_2 = r'^-[0-9]*\.[0-9]+$'
 regex_3 = r'^\+[0-9]*\.[0-9]+$'
 #endregion
 
+# TODO: SI SIRVE
+
 cadena = "+.e-2"
 
 # Verificar si la cadena coincide con el primer regex y NO con el segundo, el segundo es para rebotar errores como: -.e-2, -.e, -., -2.e-2
