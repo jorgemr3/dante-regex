@@ -1,7 +1,7 @@
 def es_numero_valido(cadena: str) -> bool:
     if not cadena:
         return False
-    
+        
     pos = 0
     if cadena[0] in "+-":
         pos = 1
@@ -67,9 +67,26 @@ def es_numero_valido(cadena: str) -> bool:
 # for caso in invalidos:
 #     print(f"{caso}: {'Válido' if es_numero_valido(caso) else 'Inválido'}")
 
-
 while True:
     cadena = input("Ingrese una cadena: ")
     if not cadena:
         break
     print(f"{cadena}: {'Válido' if es_numero_valido(cadena) else 'Inválido'}")
+    
+    
+# es una funcion con un string como argumento que retorna booleano
+    # si no es un string retorna falso
+    # pero si es string entonces verifica si el primer caracter lleva, o no 
+    # un signo, si lo lleva entonces pasa a la sig posicion, 
+    # si no lo lleva no pasa nada, significa que ya hay un digito
+    # luego verifica si ya llego al final de la cadena, si es asi retorna falso
+    # si no calcula el resto de la cadena que abarca desde la posicion actual hasta el final
+    # luego verifica si hay un caracter 'e' o 'E' en la cadena declarando un indice para este,
+    # si hay mas de un caracter 'e' o 'E' retorna falso
+    # luego extrae el indice del exponente y define su signo y exponente
+    # si no hay exponente pero si signo entonces retorna falso
+    # pero si no hay signo entonces solo calcula la base y exponente es None
+    # luego verifica si existe un punto en la base empieza o termina con punto, 
+    # si si pues retorna falso porque ya se definio la parte decimal
+    # si no entonces cuenta el total de puntos en la base, si detecta mas de uno
+    # TODO: ya me dio flojera jaja me quede en la linea 51
